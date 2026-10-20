@@ -1,0 +1,14 @@
+{
+  "geode": "3.0.0",
+  "gd": {
+    "win": "2.2081",
+    "android": "2.2081",
+    "mac": "2.2081"
+  },
+  "id": "deinname.auto_decorate_ai",
+  "name": "Auto Decorate AI",
+  "version": "v1.0.0",
+  "developer": "DeinName",
+  "description": "AI-powered auto-decorator for Geometry Dash 2.2081",
+  "dependencies": []
+}
