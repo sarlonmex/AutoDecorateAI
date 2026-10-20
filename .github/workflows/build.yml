@@ -1,22 +1,10 @@
 name: Build Geode Mod
 
-on:
-  push:
-    branches: ["**"]
-  pull_request:
-    branches: ["**"]
+on: [push, pull_request]
 
 jobs:
   build:
-    strategy:
-      fail-fast: false
-      matrix:
-        config:
-          - name: Windows
-            os: windows-latest
-
-    runs-on: ${{ matrix.config.os }}
-
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -24,3 +12,4 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           sdk: nightly
+          caching: false
