@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build the mod
+      - name: Build Geode Mod
         uses: geode-sdk/build-geode-mod@main
         with:
           sdk: nightly
